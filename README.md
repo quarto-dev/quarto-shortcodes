@@ -10,7 +10,7 @@ Shortcodes are special markdown directives that generate various types of conten
 {{< meta title >}}
 ```
 
-We could render a document using this shortcode by adding the [shortcodes.lua](shortcodes.lua) filter:
+Render a document using this shortcode by adding the [shortcodes.lua](shortcodes.lua) filter:
 
 ```bash
 pandoc document.md --lua-filter shortcodes.lua --to html
