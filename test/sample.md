@@ -6,7 +6,7 @@ var1: foo
 var2: "{{< meta var1 >}}"
 shortcodes:
   - test/toupper.lua
-  - test/date.lua
+  - test/hello.lua
 ---
 
 ## Block 
@@ -61,7 +61,7 @@ This reads the `FOO` environment var: {{< env FOO >}}.
 
 {{< toupper _make this uppercase_ >}}
 
-The current date is {{< current-date >}}.
+Say "{{< hello >}}"
 
-The current year is {{< current-date %Y >}}.
+Say "{{< hello 😀 >}}".
 
